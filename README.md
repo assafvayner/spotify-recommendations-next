@@ -1,29 +1,9 @@
-# API Routes Example with CORS
+# Spotify recommendations dashboard
 
-Next.js ships with [API routes](https://nextjs.org/docs/api-routes/introduction) which provides an easy solution to build your own `API`.
+Presenting a UI enabling searching for artists and songs and then get song recommendations.
+Powered by Spotify search and recommendation API's.
+Using nextjs framework in typescript.
 
-This example shows how to create an `API` endpoint with [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) headers, using the [cors](https://github.com/expressjs/cors) package.
+In order to run in development mode or deployed must create a `.env.local` file with the environment variables listed in `sample.env.local` with spotify web api credentials.
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/api-routes-cors)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors&project-name=api-routes-cors&repository-name=api-routes-cors)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example api-routes-cors api-routes-cors-app
-```
-
-```bash
-yarn create next-app --example api-routes-cors api-routes-cors-app
-```
-
-```bash
-pnpm create next-app --example api-routes-cors api-routes-cors-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+The design is rather rough around the edges and I did not stress test many weird cases so may not always function as expected.

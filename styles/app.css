@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0%;
+  /* background gradient, Horizon from https://cssgradient.io */
+  background: #003973; /* fallback for old browsers */
+  
+  background: -webkit-linear-gradient(
+    to top,
+    #e5e5be,
+    #003973
+  ) fixed; /* Chrome 10-25, Safari 5.1-6 */
+  
+  background: linear-gradient(
+    to top,
+    #e5e5be,
+    #003973
+  ) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+}
+
+.main-page {
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
