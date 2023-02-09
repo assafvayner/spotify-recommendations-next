@@ -12,5 +12,5 @@ The design is rather rough around the edges and I did not stress test many weird
 
 This page *should* be deployed and available at either:
 
-- [spotify-recommendations-next.vercel.app](spotify-recommendations-next.vercel.app)
-- [spotify-recs.vayner.net](spotify-recs.vayner.net)
+- [https://spotify-recommendations-next.vercel.app](https://spotify-recommendations-next.vercel.app)
+- [https://spotify-recs.vayner.net](https://spotify-recs.vayner.net)
