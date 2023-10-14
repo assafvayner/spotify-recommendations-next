@@ -64,11 +64,13 @@ function ChosenValue(props: ChosenValueProps) {
         <Col flex={3}>
           <ImageComponent images={images} />
         </Col>
-        <Col flex={3}>
-          {genres && genres.length && <i>[{genres.join(", ")}]</i>}
-          {duration_ms && <i>{formatTime(duration_ms)}</i>}
-          {explicit ? <p>🅴</p> : <p></p>}
-        </Col>
+        {(genres || duration_ms || explicit) && (
+          <Col flex={3}>
+            {genres && genres.length && <i>[{genres.join(", ")}]</i>}
+            {duration_ms && <i>{`length: ${formatTime(duration_ms)}`}</i>}
+            {explicit ? <p>🅴</p> : <p></p>}
+          </Col>
+        )}
         <Col flex={1}>
           <DeleteOutlined onClick={() => props.removeFunc(item)} />
         </Col>

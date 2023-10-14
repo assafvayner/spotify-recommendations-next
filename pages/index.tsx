@@ -17,7 +17,6 @@ export default function Index(props: {}): JSX.Element {
 
   const recommend = debounce(async () => {
     if (!artistsSearchComponent && !trackSearchComponent) {
-      console.log(artistsSearchComponent, trackSearchComponent);
       // searching for nothing
       setRecommendations({} as SpotifyRecommendationResponseData);
       return;
@@ -70,6 +69,5 @@ function buildRecommendationUrl(artists: string, tracks: string) {
     }
     url = `${url}tracks=${tracks}`;
   }
-  console.log(url);
   return url;
 }

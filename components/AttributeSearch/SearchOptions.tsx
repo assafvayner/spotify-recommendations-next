@@ -42,9 +42,27 @@ function SearchOption(props: SearchOptionProps) {
     <List.Item
       key={option.id}
       onClick={() => choose(option)}
-      style={{ cursor: "pointer" }}
+      style={{
+        cursor: "pointer",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        gap: "50px",
+      }}
     >
-      {`${option.id}: ${option.name}`}
+      {option.album &&
+        option.album.images &&
+        option.album.images.length !== 0 && (
+          <img src={option.album.images[option.album.images.length - 1].url} />
+        )}
+      {option.images && option.images.length !== 0 && (
+        <img width="100px" src={option.images[option.images.length - 1].url} />
+      )}
+      <h2>
+        {option.artists && option.artists.length !== 0
+          ? `${option.name} (${option.artists[0].name})`
+          : option.name}
+      </h2>
     </List.Item>
   );
 }

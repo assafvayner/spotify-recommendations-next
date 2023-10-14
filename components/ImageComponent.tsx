@@ -9,7 +9,7 @@ export default function ImageComponent(props: ImageProps) {
   return (
     <>
       {images && images.length > 0 && (
-        <img src={images[images.length - 1].url} alt="" width={100} />
+        <img width="100px" src={images[images.length - 1].url} alt="" />
       )}
     </>
   );

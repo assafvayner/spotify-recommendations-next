@@ -30,6 +30,7 @@ export interface SpotifySearchResultItem extends HasExternalUrls {
   album?: {
     images: SpotifyImageData[];
   };
+  artists?: SpotifyArtistSubItem[];
   duration_ms?: number;
   explicit?: boolean;
 }
